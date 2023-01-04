@@ -5,16 +5,15 @@ import Cities from './Cities'
 
 import { BiSearchAlt } from "react-icons/bi";
 
-export default function Search() {
+export default function Search({ setSelectedCityName }) {
+  const [text, setText] = useState("");
+  const [isLoading, cities] = useGetCities({ text });
 
-  const [text, setText] = useState('')
-  const [isLoading, cities] = useGetCities({text})
-
-  const searchInput = useRef(null)
+  const searchInput = useRef(null);
 
   function handleSubmit(e) {
-    e.preventDefault()
-    setText(searchInput.current.value)
+    e.preventDefault();
+    setText(searchInput.current.value);
     console.log(searchInput.current.value);
   }
 
@@ -24,10 +23,12 @@ export default function Search() {
         <label>Search location</label>
         <div>
           <input type="text" ref={searchInput} />
-          <button><BiSearchAlt className={styles.search_icon}/></button>
+          <button>
+            <BiSearchAlt className={styles.search_icon} />
+          </button>
         </div>
       </form>
-      <Cities cities={cities}/>
+      <Cities cities={cities} setSelectedCityName = {setSelectedCityName} />
     </>
   );
 }

@@ -1,0 +1,45 @@
+current
+	condition
+		text (soleado)
+		icon
+	feelslike_c
+	gust_kph
+	humidity
+	is_day
+	last_updated
+	precip_mm
+	temp_c
+	uv
+	vis_km
+	wind_degree
+	wind_dir
+	wind_kph
+
+location
+	country
+	localtime
+	name
+	region
+
+forecast
+	forecastday
+		astro
+			sunrise
+			sunset
+		date
+		day
+			avghumidity
+			condition
+				text
+				icon
+			daily_chance_of_snow
+			daily_chance_of_rain
+			maxtemp_c
+			mintemp_c
+			maxwind_kph
+			totalprecip_mm
+			totalsnow_cm
+			uv
+
+			
+		

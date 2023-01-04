@@ -1,1 +1,1 @@
-export const API_KEY = '' // https://www.weatherapi.com/
+export const API_KEY = 'd44e3919e3a541ecb86183211230401' // https://www.weatherapi.com/
