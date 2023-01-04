@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_container {
+  width: calc(var(--searchbar-width)+10rem);
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  cursor: pointer;
+  transition: background-color .1s;
+  color: var(--focus-color);
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.list li:first-child {
+  margin-top: .3rem;
+}
+
+.list li:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
