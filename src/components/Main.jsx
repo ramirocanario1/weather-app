@@ -7,8 +7,8 @@ export default function Main() {
 
   return (
     <>
-      <Search setSelectedCityName={setSelectedCityName} />
-      <Weather selectedCityName  = {selectedCityName} />
+      <Search selectedCityName={selectedCityName} setSelectedCityName={setSelectedCityName} />
+      <Weather selectedCityName={selectedCityName} />
     </>
   );
 }

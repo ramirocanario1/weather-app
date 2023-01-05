@@ -1,11 +1,10 @@
 import React from 'react'
 import styles from '../styles/Cities.module.css'
 
-export default function Cities({ cities, setSelectedCityName }) {
+export default function Cities({ cities, setSelectedCityName, setShowCities }) {
   function handleClick(e) {
-    console.log("click!");
-    console.log(e.currentTarget.innerHTML);
     setSelectedCityName(e.currentTarget.innerHTML);
+    setShowCities(false)
   }
 
   return (
